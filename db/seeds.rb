@@ -7,3 +7,14 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+puts "Creando 10 tareas de prueba..."
+
+10.times do |i|
+  Tarea.create!(
+    nombre: "Tarea de prueba #{i + 1}",
+    completada: [true, false].sample
+  )
+end
+
+puts "¡10 tareas creadas con éxito!"
