@@ -31,7 +31,7 @@ production:
     <<: *default
     database: to_do_production
     username: to_do
-    password: <%= ENV["TO_DO_DATABASE_PASSWORD"] %>
+    password: <%= ENV["PRODUCTION_DB_PASSWORD"] %>
   cache:
     <<: *default
     database: to_do_production_cache
